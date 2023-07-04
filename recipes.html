@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Healthful Foods</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="recipes.js" defer></script>
+  <link href="recipes.css" type="text/css" rel="stylesheet">
+</head>
+
+<nav>
+  <div class="logo">
+    <img src="img/logo.png" alt="Logo">
+  </div>
+  <ul>
+    <li><a href="recipes.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="me.html">Me</a></li>
+  </ul>
+</nav>
+
+<body>
+
+  <div class="welcome-box">
+    <h2>Healthful Foods: Delicious Recipes for a Better You</h2>
+    <p>Thank you for visiting us. Our website helps you find the perfect recipes that suit your dietary preferences.</p>
+    <p2>Here is how you can use this tool</p2>
+    <ol>
+      <li>Enter the ingredients you have available separated by commas in the "Ingredients" field.</li>
+      <li>Set the minimum protein and maximum carbs you want for your recipe in the respective fields.</li>
+      <li>Click the "Search Recipes" button to see the recipe suggestions.</li>
+      <li>Click on the "Show Recipe" button to see the details of a recipe.</li>
+    </ol>
+      <p1> For example: Ingredients(Chicken, tomato, pasta), Minimum Protein(20) and Maximum Carbs(300)</p1>
+   
+  </div>
+  
+  <div class="input">
+
+    <div class="container">
+      <form id="recipeForm">
+        <label for="ingredients">Ingredients:</label>
+        <input type="text" id="ingredients" name="ingredients" placeholder="Enter ingredients separated by commas" required>
+      
+        <label for="minProtein">Minimum Protein:</label>
+        <input type="number" id="minProtein" name="minProtein" placeholder="Enter minimum protein in grams" required>
+      
+        <label for="maxCarbs">Maximum Carbs:</label>
+        <input type="number" id="maxCarbs" name="maxCarbs" placeholder="Enter maximum carbs in grams" required>
+      
+        <button type="submit">Search Recipes</button>
+      </form>    
+    </div>
+  </div>
+
+  <div class="container2" style="flex-direction: row;">
+    <div class="left-menu">
+      <!-- left menu code -->
+    </div>
+    <div class="right-menu">
+      <!-- right menu code -->
+    </div>
+  </div>
+  <br><br>
+
+  <div id="output"></div>
+  <a href="" id="sourceLink"></a>
+</div>
+<footer class="footer">
+ <h4 class="footer-text">
+  &copy; <span>2023</span>
+  <span class="company">Healthful Foods</span>
+  all contents created by Taiga Okuma
+</h4>
+</footer>
+</body>
+</html>

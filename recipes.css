@@ -1,0 +1,367 @@
+/* Nav Bar */
+nav {
+  background-color: #eb9122;
+  color: #fff;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  border: none;
+  height: 50px;
+  width: 50;
+  margin-left: 20px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+nav a:hover,
+nav a.active {
+ color: #b8500f;
+}
+
+
+
+
+/* Body styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative; /* set the position to relative */
+  background: url("img/background3.jpg") repeat;
+}
+
+
+img {
+  border: 5px solid rgb(236, 139, 64);
+  border-radius: 10px;
+  max-width: 80%; /* adjust the maximum width of the image */
+  height: auto; /* maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* center the image */
+}
+
+
+/* Heading styles */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #333333;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Button styles */
+button {
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff6600;
+}
+
+/* Form styles */
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Card styles */
+.card {
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 2rem; /* add margin top to create space between image and recipe */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #999999;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ============= Nav var ============== */
+
+/* ==================================== */
+
+/* ============= welcome box ============== */
+.welcome-box {
+  margin-top: 200px;
+  margin: 30px auto;
+  width: 80%;
+  padding: 20px;
+  border: 2px solid #ff8c00;
+  border-radius: 10px;
+  background-color: #fff8dc;
+  text-align: center;
+  animation-name: float;
+  /* animation-duration: 5s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-timing-function: ease-in-out; */
+  box-shadow: 0px 0px 10px 1px rgba(255, 140, 0, 0.8);
+}
+.welcome-box ol {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
+}
+
+.welcome-box p2{
+  font-size: large;
+  font-weight: 600;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ==================================== */
+
+/* ========== App description =========== */
+.how-to-use {
+  text-align: center;
+}
+
+.how-to-use ol {
+  list-style-type: decimal;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.how-to-use ol li {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+/* ==================================== */
+
+
+/* ========== Input =========== */
+
+.container label,
+.container input {
+  margin-bottom: 0.5rem;
+}
+.container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 2px solid #ff8c00;
+  border-radius: 10px;
+  background-color: #fff8dc;
+  box-shadow: 0px 0px 10px 1px rgba(255, 140, 0, 0.8);
+}
+/* ==================================== */
+.recipeDetails {
+  margin-bottom: 2rem;
+}
+
+/* Container styles */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-menu {
+  flex-basis: 45%;
+}
+
+.right-menu {
+  flex-basis: 45%;
+}
+.recipe-card {
+  display: inline-block;
+  width: 49%; /* Set the width to half of the container to display two cards in a row */
+  margin-bottom: 1rem;
+  
+}
+.recipe-info {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.column {
+  flex-basis: 48%;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.recipeDetails {
+  margin-top: 1rem;
+}
+
+.recipeDetails {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 20px;
+  margin-top: 10px;
+  border: 2px solid #ff8c00;
+  border-radius: 10px;
+  background-color: #fff8dc;
+  box-shadow: 0px 0px 10px 1px rgba(255, 140, 0, 0.8);
+  display: none; /* initially hide the box */
+}
+
+.about{
+  margin: 7% auto;
+  max-width: 80%;
+  text-align: center;
+  width: 80%;
+  padding: 20px;
+  border: 2px solid #ff8c00;
+  border-radius: 10px;
+  background-color: #fff8dc;
+  box-shadow: 0px 0px 10px 1px rgba(255, 140, 0, 0.8);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.about p{
+  font-size: larger;
+}
+
+.error-message {
+  text-align: center;
+}
+ .footer{
+  position: fixed;
+  bottom: 0;
+  background: #eb9122;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-text{
+  margin-top: 1rem;
+  text-transform: uppercase;
+
+  font-weight: 400; 
+}
+/* For smartphones */
+@media only screen and (max-width: 768px) {
+  .column {
+    flex-basis: 100%;
+  }
+  .recipe-card {
+    width: 100%; /* set the width of recipe cards to 100% */
+    margin-bottom: 1rem;
+  }
+}
+
+/* For laptops with small screens */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .input label,
+  .input input {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+}
+
+/* For tablets */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .input label,
+  .input input {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+}
