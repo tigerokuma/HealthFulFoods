@@ -21,7 +21,7 @@ For example: Ingredients(Chicken, tomato, pasta), Minimum Protein(20) and Maximu
 
 ## Getting Started
 
-To use the website, navigate to [Healthful Foods](http://webhome.csc.uvic.ca/~oktaigaww/HealthfulFoods/recipes.html).
+To use the website, navigate to [Healthful Foods](https://tigerokuma.github.io/HealthFulFoods/recipes.html).
 
 ## Contributing
 
